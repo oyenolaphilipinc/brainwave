@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Sidebar from './Sidebar';
-import { Menu, Search } from "lucide-react";
+import { Menu, Search, Code, ImageIcon, LayoutDashboard, MessageSquare, Music, Settings, VideoIcon } from "lucide-react";
 
 const DashboardHome = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,8 +35,15 @@ const DashboardHome = () => {
         <div className="mt-4 mr-6 text-xl font-bold border px-1 py-1 rounded-full bg-green-950 border-black cursor-pointer">OP</div>
         </div>
         <div className="mt-10">
-          <h1 className="text-center text-2xl font-bold mb-2">Explore the power of AI</h1>
-          <p className="text-sm text-center mb-8">Chat with the smartest AI- Experience the power of AI</p>
+          <h1 className="text-center text-2xl font-bold mb-2 md:text-4xl">Explore the power of AI</h1>
+          <p className="text-sm text-center mb-8 md:text-lg">Chat with the smartest AI- Experience the power of AI</p>
+          <div className="ml-6">
+            <button className="border border-black pl-4 py-6 flex text-md rounded-md mb-4 w-11/12 cursor-pointer md:w-7/12 md:mx-auto"><MessageSquare className='h-5 w-5 mr-3 text-violet-500'/>Conversation</button>
+            <button className="border border-black pl-4 py-6 flex text-md rounded-md w-11/12 mb-4 cursor-pointer md:w-7/12 md:mx-auto"><Music className='h-5 w-5 mr-3 text-emerald-500'/>Music Generation</button>
+            <button className="border border-black pl-4 py-6 flex text-md rounded-md w-11/12 mb-4 cursor-pointer md:w-7/12 md:mx-auto"><ImageIcon className='h-5 w-5 mr-3 text-pink-700'/>Image Generation</button>
+            <button className="border border-black pl-4 py-6 flex text-md rounded-md w-11/12 mb-4 cursor-pointer md:w-7/12 md:mx-auto"><VideoIcon className='h-5 w-5 mr-3 text-orange-700'/>Video Generation</button>
+            <button className="border border-black pl-4 py-6 flex text-md rounded-md w-11/12 cursor-pointer md:w-7/12 md:mx-auto mb-12"><Code className='h-5 w-5 mr-3 text-green-700'/>Code Generation</button>
+          </div>
         </div>
       </div>
     </div>
