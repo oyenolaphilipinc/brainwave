@@ -6,9 +6,14 @@ import { Menu, Search, Code, ImageIcon, LayoutDashboard, MessageSquare, Music, S
 
 const DashboardHome = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [toggle, setToggle] = useState(false);
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
+  };
+
+  const togglePopover = () => {
+    setToggle(!toggle);
   };
 
   return (
@@ -32,7 +37,15 @@ const DashboardHome = () => {
         </div>
           </form>
         </div>
-        <div className="mt-4 mr-6 text-xl font-bold border px-1 py-1 rounded-full bg-green-950 border-black cursor-pointer">OP</div>
+        <div className="mt-4 mr-6 text-xl font-bold border px-1 py-1 rounded-full bg-green-950 border-black cursor-pointer" onClick={togglePopover}>OP</div>
+          {toggle && (
+          <div className="absolute z-10 top-15 right-0 bg-white border border-gray-300 p-3 rounded shadow-lg text-black">
+            {/* Popover content */}
+            <button className="flex"><Settings className='h-5 w-5 mr-2'/>Settings</button><br/>
+            <button className="flex"><Settings className='h-5 w-5 mr-2'/>Profile</button><br/>
+            <button className="flex"><Settings className='h-5 w-5 mr-2'/>Logout</button>
+          </div>
+      )}
         </div>
         <div className="mt-10">
           <h1 className="text-center text-2xl font-bold mb-2 md:text-4xl">Explore the power of AI</h1>
