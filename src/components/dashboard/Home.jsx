@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Sidebar from './Sidebar';
-import { Menu, Search, Code, ImageIcon, MessageSquare, Music, Settings, VideoIcon, UserRoundX, LogOut } from "lucide-react";
+import { Menu, Search, Code, ImageIcon, MessageSquare, Music, Settings, VideoIcon, UserRoundX, LogOut, ArrowRight } from "lucide-react";
 
 const DashboardHome = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -51,11 +51,36 @@ const DashboardHome = () => {
           <h1 className="text-center text-2xl font-bold mb-2 md:text-4xl">Explore the power of AI</h1>
           <p className="text-sm text-center mb-8 md:text-lg">Chat with the smartest AI- Experience the power of AI</p>
           <div className="ml-6">
+            <div className="relative">
             <button className="border border-black pl-4 py-6 flex text-md rounded-md mb-4 w-11/12 cursor-pointer md:w-7/12 md:mx-auto"><MessageSquare className='h-5 w-5 mr-3 text-violet-500'/>Conversation</button>
+            <div className="absolute hidden inset-y-0 md:right-72 md:flex items-center pl-3 pointer-events-none">
+              <ArrowRight className="h-5 w-5 text-gray-400 mr-2" />
+            </div>
+            </div>
+            <div className="relative">
             <button className="border border-black pl-4 py-6 flex text-md rounded-md w-11/12 mb-4 cursor-pointer md:w-7/12 md:mx-auto"><Music className='h-5 w-5 mr-3 text-emerald-500'/>Music Generation</button>
+            <div className="absolute hidden inset-y-0 md:right-72 md:flex items-center pl-3 pointer-events-none">
+              <ArrowRight className="h-5 w-5 text-gray-400 mr-2" />
+            </div>
+            </div>
+            <div className="relative">
             <button className="border border-black pl-4 py-6 flex text-md rounded-md w-11/12 mb-4 cursor-pointer md:w-7/12 md:mx-auto"><ImageIcon className='h-5 w-5 mr-3 text-pink-700'/>Image Generation</button>
+            <div className="absolute hidden inset-y-0 md:right-72 md:flex items-center pl-3 pointer-events-none">
+              <ArrowRight className="h-5 w-5 text-gray-400 mr-2" />
+            </div>
+            </div>
+            <div className="relative">
             <button className="border border-black pl-4 py-6 flex text-md rounded-md w-11/12 mb-4 cursor-pointer md:w-7/12 md:mx-auto"><VideoIcon className='h-5 w-5 mr-3 text-orange-700'/>Video Generation</button>
+            <div className="absolute hidden inset-y-0 md:right-72 md:flex items-center pl-3 pointer-events-none">
+              <ArrowRight className="h-5 w-5 text-gray-400 mr-2" />
+            </div>
+            </div>
+            <div className="relative">
             <button className="border border-black pl-4 py-6 flex text-md rounded-md w-11/12 cursor-pointer md:w-7/12 md:mx-auto mb-12"><Code className='h-5 w-5 mr-3 text-green-700'/>Code Generation</button>
+            <div className="absolute hidden inset-y-0 md:right-72 md:flex items-center pl-3 pointer-events-none">
+              <ArrowRight className="h-5 w-5 text-gray-400 mr-2" />
+            </div>
+            </div>
           </div>
         </div>
       </div>
