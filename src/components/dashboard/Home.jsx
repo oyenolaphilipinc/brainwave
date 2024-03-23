@@ -34,6 +34,10 @@ const DashboardHome = () => {
         </div>
         <div className="mt-4 mr-6 text-xl font-bold border px-1 py-1 rounded-full bg-green-950 border-black cursor-pointer">OP</div>
         </div>
+        <div className="mt-10">
+          <h1 className="text-center text-2xl font-bold mb-2">Explore the power of AI</h1>
+          <p className="text-sm text-center mb-8">Chat with the smartest AI- Experience the power of AI</p>
+        </div>
       </div>
     </div>
   );
