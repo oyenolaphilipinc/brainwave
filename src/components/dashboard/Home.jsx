@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Sidebar from './Sidebar';
-import { Menu, Search, Code, ImageIcon, LayoutDashboard, MessageSquare, Music, Settings, VideoIcon } from "lucide-react";
+import { Menu, Search, Code, ImageIcon, MessageSquare, Music, Settings, VideoIcon, UserRoundX, LogOut } from "lucide-react";
 
 const DashboardHome = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,8 +42,8 @@ const DashboardHome = () => {
           <div className="absolute z-10 top-15 right-0 bg-white border border-gray-300 p-3 rounded shadow-lg text-black">
             {/* Popover content */}
             <button className="flex"><Settings className='h-5 w-5 mr-2'/>Settings</button><br/>
-            <button className="flex"><Settings className='h-5 w-5 mr-2'/>Profile</button><br/>
-            <button className="flex"><Settings className='h-5 w-5 mr-2'/>Logout</button>
+            <button className="flex"><UserRoundX className='h-5 w-5 mr-2'/>Profile</button><br/>
+            <button className="flex"><LogOut className='h-5 w-5 mr-2'/>Logout</button>
           </div>
       )}
         </div>
