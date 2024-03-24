@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Sidebar from './Sidebar';
 import { Menu, Search, Code, ImageIcon, MessageSquare, Music, Settings, VideoIcon, UserRoundX, LogOut, ArrowRight } from "lucide-react";
+import empty from "../../assets/empty.png"
 
 const Conversation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -62,6 +63,10 @@ const Conversation = () => {
                     <input type="text" placeholder="How do i calculate the radius of a circle" className="w-full outline-none border-r-none pl-2 mb-3 bg-black"/><br/>
                     <button className="w-full border px-3 py-2 bg-indigo-800 border-none rounded-md">Generate</button>
                 </div>
+            </div>
+            <div className="mt-12">
+                <img src={empty} width="400" height="400" className="mx-auto"/>
+                <p className="text-center">No conversation started.</p>
             </div>
         </div>
         
