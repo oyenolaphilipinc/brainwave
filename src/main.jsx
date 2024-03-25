@@ -11,6 +11,7 @@ import Conversation from "./components/dashboard/Conversation";
 import Image from "./components/dashboard/Image";
 import CodeHome from "./components/dashboard/Code";
 import MusicHome from "./components/dashboard/Music";
+import Video from "./components/dashboard/Video";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -24,6 +25,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/image" element={<Image />} />
         <Route path="/code" element={<CodeHome />} />
         <Route path="/music" element={<MusicHome />} />
+        <Route path="/video" element={<Video />} />
       </Routes>
     </Router>
   </React.StrictMode>

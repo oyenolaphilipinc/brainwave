@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Sidebar from './Sidebar';
-import { Menu, Search, Code, ImageIcon, MessageSquare, Music, Settings, VideoIcon, UserRoundX, LogOut, ArrowRight } from "lucide-react";
+import { Menu, Search, Code, ImageIcon, MessageSquare, FileAudio, Settings, VideoIcon, UserRoundX, LogOut, ArrowRight } from "lucide-react";
 import empty from "../../assets/empty.png"
 
 const Video = () => {
@@ -51,16 +51,16 @@ const Video = () => {
         <div className="mt-10">
             <div className="flex ml-3">
                 <div className="mb-12">
-                    <MessageSquare className="h-15 w-20 mr-2 md:mr-0 text-violet-500 border px-3 py-1 rounded-md border-[#0e0d15]"/>
+                    <FileAudio className="h-15 w-20 mr-2 md:mr-0 text-orange-700 border px-3 py-1 rounded-md border-[#0e0d15]"/>
                     </div>
                     <div>
-                    <h1 className="flex text-3xl ml-1 md:ml-2 md:text-3xl">Conversation</h1>
-                    <p className="text-center text-lg md:text-sm md:ml-2">Our most advanced conversation model.</p>
+                    <h1 className="flex text-3xl ml-1 md:ml-2 md:text-3xl">Video Generation</h1>
+                    <p className="text-center text-lg md:text-sm md:ml-2">Turn your prompt to video.</p>
                 </div>
             </div>
             <div>
                 <div className="border w-11/12 px-2 mx-auto py-3 border-gray-700 rounded-md md:flex">
-                    <input type="text" placeholder="How do i calculate the radius of a circle" className="w-full outline-none border-r-none pl-2 md:pl-4 mb-3 bg-[#0e0d15]"/><br/>
+                    <input type="text" placeholder="Clown fish swimming in a coral reef" className="w-full outline-none border-r-none pl-2 md:pl-4 mb-3 bg-[#0e0d15]"/><br/>
                     <button className="w-full border px-3 py-2 bg-indigo-800 border-none rounded-md md:w-56">Generate</button>
                 </div>
             </div>
