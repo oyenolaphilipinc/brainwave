@@ -10,6 +10,7 @@ import DashboardHome from "./components/dashboard/Home.jsx";
 import Conversation from "./components/dashboard/Conversation";
 import Image from "./components/dashboard/Image";
 import CodeHome from "./components/dashboard/Code";
+import MusicHome from "./components/dashboard/Music";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -22,6 +23,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/conversation" element={<Conversation />} />
         <Route path="/image" element={<Image />} />
         <Route path="/code" element={<CodeHome />} />
+        <Route path="/music" element={<MusicHome />} />
       </Routes>
     </Router>
   </React.StrictMode>
